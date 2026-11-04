@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 130">
+  <defs>
+    <linearGradient id="mountain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#087f91"/>
+      <stop offset="100%" stop-color="#00b8c7"/>
+    </linearGradient>
+    <linearGradient id="waves" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0099c6"/>
+      <stop offset="100%" stop-color="#00c6dc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Pink travel route -->
+  <path d="M20 83 C5 35 49 5 94 17"
+        fill="none" stroke="#ec238c" stroke-width="9"
+        stroke-linecap="round"/>
+
+  <!-- Airplane -->
+  <path d="M88 13 L139 0 L145 5 L119 22 L111 44
+           L104 47 L106 27 L78 38 L68 31 L88 13Z"
+        fill="#078caa"/>
+
+  <!-- Location pin -->
+  <path d="M130 42 C130 28 110 28 110 42
+           C110 55 120 66 120 66
+           C120 66 130 55 130 42Z"
+        fill="#ed258d"/>
+  <circle cx="120" cy="42" r="4" fill="white"/>
+
+  <!-- Mountains -->
+  <path d="M5 99 L43 56 L57 70 L82 30
+           L123 99Z" fill="url(#mountain)"/>
+  <path d="M69 50 L82 30 L98 53 L87 48 L81 57 L76 48Z"
+        fill="#eafaff"/>
+  <path d="M28 75 L43 56 L56 70 L47 66 L42 73 L37 67Z"
+        fill="#eafaff"/>
+
+  <!-- Mountain base -->
+  <path d="M5 98 Q50 108 83 94 Q110 82 135 98
+           L123 108 Q80 94 45 112 L12 108Z"
+        fill="#087f91"/>
+
+  <!-- Travel waves -->
+  <path d="M12 110 Q48 130 83 110 Q112 95 145 112
+           Q110 139 76 125 Q42 140 12 110Z"
+        fill="url(#waves)"/>
+  <path d="M35 119 Q68 137 103 120 Q122 112 139 120"
+        fill="none" stroke="white" stroke-width="4"
+        stroke-linecap="round"/>
+</svg>
