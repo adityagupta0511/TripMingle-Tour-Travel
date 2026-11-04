@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import loginImg from "../assets/login.png";
 import userImg from "../assets/user.png";
 import { Link, useNavigate } from "react-router-dom";
+import { BASE_URL } from "../utils/config";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const Login = () => {
     setMessage("");
 
     try {
-      const response = await fetch("http://localhost:8080/api/auth/login", {
+      const response = await fetch(`${BASE_URL}/auth/login`, {
         method: "POST",
         credentials: "include",
         headers: {

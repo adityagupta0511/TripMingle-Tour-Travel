@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import registerImg from "../assets/register.png";
 import userImg from "../assets/user.png";
 import { Link, useNavigate } from "react-router-dom";
+import { BASE_URL } from "../utils/config";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ const Register = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:8080/api/auth/register", {
+      const response = await fetch(`${BASE_URL}/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
